@@ -1,0 +1,792 @@
+<!DOCTYPE html><html lang="en" class="dark" data-scrapbook-source="https://www.sandwatch.com/home" data-scrapbook-create="20250214232135188" data-scrapbook-adoptedstylesheet-0=":host { z-index: var(--w3m-z-index); display: block; backface-visibility: hidden; position: fixed; inset: 0px; pointer-events: none; opacity: 0; background-color: var(--wui-cover); transition: opacity 0.2s var(--wui-ease-out-power-2); will-change: opacity; }
+
+:host(.open) { opacity: 1; }
+
+:host(.embedded) { position: relative; pointer-events: unset; background: none; width: 100%; opacity: 1; }
+
+wui-card { max-width: var(--w3m-modal-width); width: 100%; position: relative; animation-duration: ; animation-timing-function: ; animation-delay: ; animation-iteration-count: ; animation-direction: ; animation-play-state: ; animation-name: ; animation-timeline: ; animation-range-start: ; animation-range-end: ; animation-fill-mode: backwards; outline: none; transition: border-radius var(--wui-duration-lg) var(--wui-ease-out-power-1),
+      background-color var(--wui-duration-lg) var(--wui-ease-out-power-1); will-change: border-radius, background-color; }
+
+:host(.embedded) wui-card { max-width: 400px; }
+
+wui-card[shake=&quot;true&quot;] { animation: zoom-in 0.2s var(--wui-ease-out-power-2),
+      w3m-shake 0.5s var(--wui-ease-out-power-2); }
+
+wui-flex { overflow: hidden auto; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
+
+@media (max-height: 700px) and (min-width: 431px) {
+  wui-flex { align-items: flex-start; }
+  wui-card { margin: var(--wui-spacing-xxl) 0px; }
+}
+
+@media (max-width: 430px) {
+  wui-flex { align-items: flex-end; }
+  wui-card { max-width: 100%; border-bottom-left-radius: var(--local-border-bottom-mobile-radius); border-bottom-right-radius: var(--local-border-bottom-mobile-radius); border-bottom: none; animation: slide-in 0.2s var(--wui-ease-out-power-2); }
+  wui-card[shake=&quot;true&quot;] { animation: slide-in 0.2s var(--wui-ease-out-power-2),
+        w3m-shake 0.5s var(--wui-ease-out-power-2); }
+}
+
+@keyframes zoom-in {
+  0% { transform: scale(0.95) translateY(0px); }
+  100% { transform: scale(1) translateY(0px); }
+}
+
+@keyframes slide-in {
+  0% { transform: scale(1) translateY(50px); }
+  100% { transform: scale(1) translateY(0px); }
+}
+
+@keyframes w3m-shake {
+  0% { transform: scale(1) rotate(0deg); }
+  20% { transform: scale(1) rotate(-1deg); }
+  40% { transform: scale(1) rotate(1.5deg); }
+  60% { transform: scale(1) rotate(-1.5deg); }
+  80% { transform: scale(1) rotate(1deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+@keyframes w3m-view-height {
+  0% { height: var(--prev-height); }
+  100% { height: var(--new-height); }
+}"><script src="/assets/main.js"></script><head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="favicon-2c3bdbc9.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- HTML Meta Tags -->
+    <title>Sandwatch.com - The Future of Decentralized Entertainment</title>
+    <meta name="description" content="Revolutionizing storytelling with blockchain and AI. Sandwatch.com is a Web3-powered platform where creators and communities unite to produce and enjoy high-quality movies and shows. From decentralized writers' rooms to rewarding contributors with $WATCH, we're shaping the future of streaming and storytelling.">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://www.sandwatch.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sandwatch.com - The Future of Decentralized Entertainment">
+    <meta property="og:description" content="Revolutionizing storytelling with blockchain and AI. Sandwatch.com is a Web3-powered platform where creators and communities unite to produce and enjoy high-quality movies and shows. From decentralized writers' rooms to rewarding contributors with $WATCH, we're shaping the future of streaming and storytelling.">
+    <meta property="og:image" content="https://www.sandwatch.com/thumb.jpg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="www.sandwatch.com">
+    <meta property="twitter:url" content="https://www.sandwatch.com/">
+    <meta name="twitter:title" content="Sandwatch.com - The Future of Decentralized Entertainment">
+    <meta name="twitter:description" content="Revolutionizing storytelling with blockchain and AI. Sandwatch.com is a Web3-powered platform where creators and communities unite to produce and enjoy high-quality movies and shows. From decentralized writers' rooms to rewarding contributors with $WATCH, we're shaping the future of streaming and storytelling.">
+    <meta name="twitter:image" content="https://www.sandwatch.com/thumb.jpg">
+    
+    <link rel="stylesheet" href="index-a5f6a9a5.css">
+  <style>
+      @import url("css2.css");
+      @keyframes w3m-shake {
+        0% {
+          transform: scale(1) rotate(0deg);
+        }
+        20% {
+          transform: scale(1) rotate(-1deg);
+        }
+        40% {
+          transform: scale(1) rotate(1.5deg);
+        }
+        60% {
+          transform: scale(1) rotate(-1.5deg);
+        }
+        80% {
+          transform: scale(1) rotate(1deg);
+        }
+        100% {
+          transform: scale(1) rotate(0deg);
+        }
+      }
+      @keyframes w3m-iframe-fade-out {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      @keyframes w3m-iframe-zoom-in {
+        0% {
+          transform: translateY(50px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+      @keyframes w3m-iframe-zoom-in-mobile {
+        0% {
+          transform: scale(0.95);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      :root {
+        --w3m-modal-width: 360px;
+        --w3m-color-mix-strength: 0%;
+        --w3m-font-family: Abcdiatype, sans-serif;
+        --w3m-font-size-master: 10px;
+        --w3m-border-radius-master: 1px;
+        --w3m-z-index: 999;
+
+        --wui-font-family: var(--w3m-font-family);
+
+        --wui-font-size-mini: calc(var(--w3m-font-size-master) * 0.8);
+        --wui-font-size-micro: var(--w3m-font-size-master);
+        --wui-font-size-tiny: calc(var(--w3m-font-size-master) * 1.2);
+        --wui-font-size-small: calc(var(--w3m-font-size-master) * 1.4);
+        --wui-font-size-paragraph: calc(var(--w3m-font-size-master) * 1.6);
+        --wui-font-size-medium: calc(var(--w3m-font-size-master) * 1.8);
+        --wui-font-size-large: calc(var(--w3m-font-size-master) * 2);
+        --wui-font-size-title-6: calc(var(--w3m-font-size-master) * 2.2);
+        --wui-font-size-medium-title: calc(var(--w3m-font-size-master) * 2.4);
+        --wui-font-size-2xl: calc(var(--w3m-font-size-master) * 4);
+
+        --wui-border-radius-5xs: var(--w3m-border-radius-master);
+        --wui-border-radius-4xs: calc(var(--w3m-border-radius-master) * 1.5);
+        --wui-border-radius-3xs: calc(var(--w3m-border-radius-master) * 2);
+        --wui-border-radius-xxs: calc(var(--w3m-border-radius-master) * 3);
+        --wui-border-radius-xs: calc(var(--w3m-border-radius-master) * 4);
+        --wui-border-radius-s: calc(var(--w3m-border-radius-master) * 5);
+        --wui-border-radius-m: calc(var(--w3m-border-radius-master) * 7);
+        --wui-border-radius-l: calc(var(--w3m-border-radius-master) * 9);
+        --wui-border-radius-3xl: calc(var(--w3m-border-radius-master) * 20);
+
+        --wui-font-weight-light: 400;
+        --wui-font-weight-regular: 500;
+        --wui-font-weight-medium: 600;
+        --wui-font-weight-bold: 700;
+
+        --wui-letter-spacing-2xl: -1.6px;
+        --wui-letter-spacing-medium-title: -0.96px;
+        --wui-letter-spacing-title-6: -0.88px;
+        --wui-letter-spacing-large: -0.8px;
+        --wui-letter-spacing-medium: -0.72px;
+        --wui-letter-spacing-paragraph: -0.64px;
+        --wui-letter-spacing-small: -0.56px;
+        --wui-letter-spacing-tiny: -0.48px;
+        --wui-letter-spacing-micro: -0.2px;
+        --wui-letter-spacing-mini: -0.16px;
+
+        --wui-spacing-0: 0px;
+        --wui-spacing-4xs: 2px;
+        --wui-spacing-3xs: 4px;
+        --wui-spacing-xxs: 6px;
+        --wui-spacing-2xs: 7px;
+        --wui-spacing-xs: 8px;
+        --wui-spacing-1xs: 10px;
+        --wui-spacing-s: 12px;
+        --wui-spacing-m: 14px;
+        --wui-spacing-l: 16px;
+        --wui-spacing-2l: 18px;
+        --wui-spacing-xl: 20px;
+        --wui-spacing-xxl: 24px;
+        --wui-spacing-2xl: 32px;
+        --wui-spacing-3xl: 40px;
+        --wui-spacing-4xl: 90px;
+        --wui-spacing-5xl: 95px;
+
+        --wui-icon-box-size-xxs: 14px;
+        --wui-icon-box-size-xs: 20px;
+        --wui-icon-box-size-sm: 24px;
+        --wui-icon-box-size-md: 32px;
+        --wui-icon-box-size-mdl: 36px;
+        --wui-icon-box-size-lg: 40px;
+        --wui-icon-box-size-2lg: 48px;
+        --wui-icon-box-size-xl: 64px;
+
+        --wui-icon-size-inherit: inherit;
+        --wui-icon-size-xxs: 10px;
+        --wui-icon-size-xs: 12px;
+        --wui-icon-size-sm: 14px;
+        --wui-icon-size-md: 16px;
+        --wui-icon-size-mdl: 18px;
+        --wui-icon-size-lg: 20px;
+        --wui-icon-size-xl: 24px;
+        --wui-icon-size-xxl: 28px;
+
+        --wui-wallet-image-size-inherit: inherit;
+        --wui-wallet-image-size-sm: 40px;
+        --wui-wallet-image-size-md: 56px;
+        --wui-wallet-image-size-lg: 80px;
+
+        --wui-visual-size-size-inherit: inherit;
+        --wui-visual-size-sm: 40px;
+        --wui-visual-size-md: 55px;
+        --wui-visual-size-lg: 80px;
+
+        --wui-box-size-md: 100px;
+        --wui-box-size-lg: 120px;
+
+        --wui-ease-out-power-2: cubic-bezier(0, 0, 0.22, 1);
+        --wui-ease-out-power-1: cubic-bezier(0, 0, 0.55, 1);
+
+        --wui-ease-in-power-3: cubic-bezier(0.66, 0, 1, 1);
+        --wui-ease-in-power-2: cubic-bezier(0.45, 0, 1, 1);
+        --wui-ease-in-power-1: cubic-bezier(0.3, 0, 1, 1);
+
+        --wui-ease-inout-power-1: cubic-bezier(0.45, 0, 0.55, 1);
+
+        --wui-duration-lg: 200ms;
+        --wui-duration-md: 125ms;
+        --wui-duration-sm: 75ms;
+
+        --wui-path-network-sm: path(
+          'M15.4 2.1a5.21 5.21 0 0 1 5.2 0l11.61 6.7a5.21 5.21 0 0 1 2.61 4.52v13.4c0 1.87-1 3.59-2.6 4.52l-11.61 6.7c-1.62.93-3.6.93-5.22 0l-11.6-6.7a5.21 5.21 0 0 1-2.61-4.51v-13.4c0-1.87 1-3.6 2.6-4.52L15.4 2.1Z'
+        );
+
+        --wui-path-network-md: path(
+          'M43.4605 10.7248L28.0485 1.61089C25.5438 0.129705 22.4562 0.129705 19.9515 1.61088L4.53951 10.7248C2.03626 12.2051 0.5 14.9365 0.5 17.886V36.1139C0.5 39.0635 2.03626 41.7949 4.53951 43.2752L19.9515 52.3891C22.4562 53.8703 25.5438 53.8703 28.0485 52.3891L43.4605 43.2752C45.9637 41.7949 47.5 39.0635 47.5 36.114V17.8861C47.5 14.9365 45.9637 12.2051 43.4605 10.7248Z'
+        );
+
+        --wui-path-network-lg: path(
+          'M78.3244 18.926L50.1808 2.45078C45.7376 -0.150261 40.2624 -0.150262 35.8192 2.45078L7.6756 18.926C3.23322 21.5266 0.5 26.3301 0.5 31.5248V64.4752C0.5 69.6699 3.23322 74.4734 7.6756 77.074L35.8192 93.5492C40.2624 96.1503 45.7376 96.1503 50.1808 93.5492L78.3244 77.074C82.7668 74.4734 85.5 69.6699 85.5 64.4752V31.5248C85.5 26.3301 82.7668 21.5266 78.3244 18.926Z'
+        );
+
+        --wui-width-network-sm: 36px;
+        --wui-width-network-md: 48px;
+        --wui-width-network-lg: 86px;
+
+        --wui-height-network-sm: 40px;
+        --wui-height-network-md: 54px;
+        --wui-height-network-lg: 96px;
+
+        --wui-icon-size-network-xs: 12px;
+        --wui-icon-size-network-sm: 16px;
+        --wui-icon-size-network-md: 24px;
+        --wui-icon-size-network-lg: 42px;
+
+        --wui-color-inherit: inherit;
+
+        --wui-color-inverse-100: #fff;
+        --wui-color-inverse-000: #000;
+
+        --wui-cover: rgba(20, 20, 20, 0.8);
+
+        --wui-color-modal-bg: var(--wui-color-modal-bg-base);
+
+        --wui-color-accent-100: var(--wui-color-accent-base-100);
+        --wui-color-accent-090: var(--wui-color-accent-base-090);
+        --wui-color-accent-080: var(--wui-color-accent-base-080);
+
+        --wui-color-success-100: var(--wui-color-success-base-100);
+        --wui-color-success-125: var(--wui-color-success-base-125);
+
+        --wui-color-warning-100: var(--wui-color-warning-base-100);
+
+        --wui-color-error-100: var(--wui-color-error-base-100);
+        --wui-color-error-125: var(--wui-color-error-base-125);
+
+        --wui-color-blue-100: var(--wui-color-blue-base-100);
+        --wui-color-blue-90: var(--wui-color-blue-base-90);
+
+        --wui-icon-box-bg-error-100: var(--wui-icon-box-bg-error-base-100);
+        --wui-icon-box-bg-blue-100: var(--wui-icon-box-bg-blue-base-100);
+        --wui-icon-box-bg-success-100: var(--wui-icon-box-bg-success-base-100);
+        --wui-icon-box-bg-inverse-100: var(--wui-icon-box-bg-inverse-base-100);
+
+        --wui-all-wallets-bg-100: var(--wui-all-wallets-bg-100);
+
+        --wui-avatar-border: var(--wui-avatar-border-base);
+
+        --wui-thumbnail-border: var(--wui-thumbnail-border-base);
+
+        --wui-wallet-button-bg: var(--wui-wallet-button-bg-base);
+
+        --wui-box-shadow-blue: var(--wui-color-accent-glass-020);
+      }
+
+      @supports (background: color-mix(in srgb, white 50%, black)) {
+        :root {
+          --wui-color-modal-bg: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-modal-bg-base)
+          );
+
+          --wui-box-shadow-blue: color-mix(in srgb, var(--wui-color-accent-100) 20%, transparent);
+
+          --wui-color-accent-100: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 100%,
+            transparent
+          );
+          --wui-color-accent-090: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 90%,
+            transparent
+          );
+          --wui-color-accent-080: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 80%,
+            transparent
+          );
+          --wui-color-accent-glass-090: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 90%,
+            transparent
+          );
+          --wui-color-accent-glass-080: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 80%,
+            transparent
+          );
+          --wui-color-accent-glass-020: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 20%,
+            transparent
+          );
+          --wui-color-accent-glass-015: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 15%,
+            transparent
+          );
+          --wui-color-accent-glass-010: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 10%,
+            transparent
+          );
+          --wui-color-accent-glass-005: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 5%,
+            transparent
+          );
+          --wui-color-accent-002: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 2%,
+            transparent
+          );
+
+          --wui-color-fg-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-100)
+          );
+          --wui-color-fg-125: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-125)
+          );
+          --wui-color-fg-150: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-150)
+          );
+          --wui-color-fg-175: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-175)
+          );
+          --wui-color-fg-200: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-200)
+          );
+          --wui-color-fg-225: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-225)
+          );
+          --wui-color-fg-250: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-250)
+          );
+          --wui-color-fg-275: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-275)
+          );
+          --wui-color-fg-300: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-300)
+          );
+          --wui-color-fg-325: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-325)
+          );
+          --wui-color-fg-350: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-350)
+          );
+
+          --wui-color-bg-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-100)
+          );
+          --wui-color-bg-125: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-125)
+          );
+          --wui-color-bg-150: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-150)
+          );
+          --wui-color-bg-175: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-175)
+          );
+          --wui-color-bg-200: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-200)
+          );
+          --wui-color-bg-225: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-225)
+          );
+          --wui-color-bg-250: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-250)
+          );
+          --wui-color-bg-275: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-275)
+          );
+          --wui-color-bg-300: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-300)
+          );
+          --wui-color-bg-325: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-325)
+          );
+          --wui-color-bg-350: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-350)
+          );
+
+          --wui-color-success-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-success-base-100)
+          );
+          --wui-color-success-125: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-success-base-125)
+          );
+
+          --wui-color-warning-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-warning-base-100)
+          );
+
+          --wui-color-error-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-error-base-100)
+          );
+          --wui-color-blue-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-blue-base-100)
+          );
+          --wui-color-blue-90: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-blue-base-90)
+          );
+          --wui-color-error-125: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-error-base-125)
+          );
+
+          --wui-icon-box-bg-error-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-icon-box-bg-error-base-100)
+          );
+          --wui-icon-box-bg-accent-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-icon-box-bg-blue-base-100)
+          );
+          --wui-icon-box-bg-success-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-icon-box-bg-success-base-100)
+          );
+          --wui-icon-box-bg-inverse-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-icon-box-bg-inverse-base-100)
+          );
+
+          --wui-all-wallets-bg-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-all-wallets-bg-100)
+          );
+
+          --wui-avatar-border: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-avatar-border-base)
+          );
+
+          --wui-thumbnail-border: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-thumbnail-border-base)
+          );
+
+          --wui-wallet-button-bg: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-wallet-button-bg-base)
+          );
+        }
+      }
+    </style><style media="enabled">
+      :root {
+        --w3m-color-mix: #000;
+        --w3m-accent: #3bf93b;
+        --w3m-default: #000;
+
+        --wui-color-modal-bg-base: #fff;
+        --wui-color-accent-base-100: var(--w3m-accent);
+
+        --wui-color-blueberry-100: hsla(231, 100%, 70%, 1);
+        --wui-color-blueberry-090: hsla(231, 97%, 72%, 1);
+        --wui-color-blueberry-080: hsla(231, 92%, 74%, 1);
+
+        --wui-color-fg-100: #141414;
+        --wui-color-fg-125: #2d3131;
+        --wui-color-fg-150: #474d4d;
+        --wui-color-fg-175: #636d6d;
+        --wui-color-fg-200: #798686;
+        --wui-color-fg-225: #828f8f;
+        --wui-color-fg-250: #8b9797;
+        --wui-color-fg-275: #95a0a0;
+        --wui-color-fg-300: #9ea9a9;
+        --wui-color-fg-325: #9a9a9a;
+        --wui-color-fg-350: #d0d0d0;
+
+        --wui-color-bg-100: #ffffff;
+        --wui-color-bg-125: #f5fafa;
+        --wui-color-bg-150: #f3f8f8;
+        --wui-color-bg-175: #eef4f4;
+        --wui-color-bg-200: #eaf1f1;
+        --wui-color-bg-225: #e5eded;
+        --wui-color-bg-250: #e1e9e9;
+        --wui-color-bg-275: #dce7e7;
+        --wui-color-bg-300: #d8e3e3;
+        --wui-color-bg-325: #f3f3f3;
+        --wui-color-bg-350: #202020;
+
+        --wui-color-success-base-100: #26b562;
+        --wui-color-success-base-125: #30a46b;
+
+        --wui-color-warning-base-100: #f3a13f;
+
+        --wui-color-error-base-100: #f05142;
+        --wui-color-error-base-125: #df4a34;
+
+        --wui-color-blue-base-100: rgba(102, 125, 255, 1);
+        --wui-color-blue-base-90: rgba(102, 125, 255, 0.9);
+
+        --wui-color-success-glass-001: rgba(38, 181, 98, 0.01);
+        --wui-color-success-glass-002: rgba(38, 181, 98, 0.02);
+        --wui-color-success-glass-005: rgba(38, 181, 98, 0.05);
+        --wui-color-success-glass-010: rgba(38, 181, 98, 0.1);
+        --wui-color-success-glass-015: rgba(38, 181, 98, 0.15);
+        --wui-color-success-glass-020: rgba(38, 181, 98, 0.2);
+        --wui-color-success-glass-025: rgba(38, 181, 98, 0.25);
+        --wui-color-success-glass-030: rgba(38, 181, 98, 0.3);
+        --wui-color-success-glass-060: rgba(38, 181, 98, 0.6);
+        --wui-color-success-glass-080: rgba(38, 181, 98, 0.8);
+
+        --wui-color-success-glass-reown-020: rgba(48, 164, 107, 0.2);
+
+        --wui-color-warning-glass-reown-020: rgba(243, 161, 63, 0.2);
+
+        --wui-color-error-glass-001: rgba(240, 81, 66, 0.01);
+        --wui-color-error-glass-002: rgba(240, 81, 66, 0.02);
+        --wui-color-error-glass-005: rgba(240, 81, 66, 0.05);
+        --wui-color-error-glass-010: rgba(240, 81, 66, 0.1);
+        --wui-color-error-glass-015: rgba(240, 81, 66, 0.15);
+        --wui-color-error-glass-020: rgba(240, 81, 66, 0.2);
+        --wui-color-error-glass-025: rgba(240, 81, 66, 0.25);
+        --wui-color-error-glass-030: rgba(240, 81, 66, 0.3);
+        --wui-color-error-glass-060: rgba(240, 81, 66, 0.6);
+        --wui-color-error-glass-080: rgba(240, 81, 66, 0.8);
+
+        --wui-color-error-glass-reown-020: rgba(223, 74, 52, 0.2);
+
+        --wui-icon-box-bg-error-base-100: #f4dfdd;
+        --wui-icon-box-bg-blue-base-100: #d9ecfb;
+        --wui-icon-box-bg-success-base-100: #daf0e4;
+        --wui-icon-box-bg-inverse-base-100: #dcecfc;
+
+        --wui-all-wallets-bg-100: #e8f1fa;
+
+        --wui-avatar-border-base: #f3f4f4;
+
+        --wui-thumbnail-border-base: #eaefef;
+
+        --wui-wallet-button-bg-base: var(--wui-color-bg-125);
+
+        --wui-color-gray-glass-001: rgba(0, 0, 0, 0.01);
+        --wui-color-gray-glass-002: rgba(0, 0, 0, 0.02);
+        --wui-color-gray-glass-005: rgba(0, 0, 0, 0.05);
+        --wui-color-gray-glass-010: rgba(0, 0, 0, 0.1);
+        --wui-color-gray-glass-015: rgba(0, 0, 0, 0.15);
+        --wui-color-gray-glass-020: rgba(0, 0, 0, 0.2);
+        --wui-color-gray-glass-025: rgba(0, 0, 0, 0.25);
+        --wui-color-gray-glass-030: rgba(0, 0, 0, 0.3);
+        --wui-color-gray-glass-060: rgba(0, 0, 0, 0.6);
+        --wui-color-gray-glass-080: rgba(0, 0, 0, 0.8);
+        --wui-color-gray-glass-090: rgba(0, 0, 0, 0.9);
+
+        --wui-color-dark-glass-100: rgba(233, 233, 233, 1);
+
+        --w3m-card-embedded-shadow-color: rgb(224 225 233 / 25%);
+      }
+    </style><style>
+      :root {
+        --w3m-color-mix: #fff;
+        --w3m-accent: #3bf93b;
+        --w3m-default: #fff;
+
+        --wui-color-modal-bg-base: #121313;
+        --wui-color-accent-base-100: var(--w3m-accent);
+
+        --wui-color-blueberry-100: hsla(230, 100%, 67%, 1);
+        --wui-color-blueberry-090: hsla(231, 76%, 61%, 1);
+        --wui-color-blueberry-080: hsla(230, 59%, 55%, 1);
+        --wui-color-blueberry-050: hsla(231, 100%, 70%, 0.1);
+
+        --wui-color-fg-100: #e4e7e7;
+        --wui-color-fg-125: #d0d5d5;
+        --wui-color-fg-150: #a8b1b1;
+        --wui-color-fg-175: #a8b0b0;
+        --wui-color-fg-200: #949e9e;
+        --wui-color-fg-225: #868f8f;
+        --wui-color-fg-250: #788080;
+        --wui-color-fg-275: #788181;
+        --wui-color-fg-300: #6e7777;
+        --wui-color-fg-325: #9a9a9a;
+        --wui-color-fg-350: #363636;
+
+        --wui-color-bg-100: #141414;
+        --wui-color-bg-125: #191a1a;
+        --wui-color-bg-150: #1e1f1f;
+        --wui-color-bg-175: #222525;
+        --wui-color-bg-200: #272a2a;
+        --wui-color-bg-225: #2c3030;
+        --wui-color-bg-250: #313535;
+        --wui-color-bg-275: #363b3b;
+        --wui-color-bg-300: #3b4040;
+        --wui-color-bg-325: #252525;
+        --wui-color-bg-350: #ffffff;
+
+        --wui-color-success-base-100: #26d962;
+        --wui-color-success-base-125: #30a46b;
+
+        --wui-color-warning-base-100: #f3a13f;
+
+        --wui-color-error-base-100: #f25a67;
+        --wui-color-error-base-125: #df4a34;
+
+        --wui-color-blue-base-100: rgba(102, 125, 255, 1);
+        --wui-color-blue-base-90: rgba(102, 125, 255, 0.9);
+
+        --wui-color-success-glass-001: rgba(38, 217, 98, 0.01);
+        --wui-color-success-glass-002: rgba(38, 217, 98, 0.02);
+        --wui-color-success-glass-005: rgba(38, 217, 98, 0.05);
+        --wui-color-success-glass-010: rgba(38, 217, 98, 0.1);
+        --wui-color-success-glass-015: rgba(38, 217, 98, 0.15);
+        --wui-color-success-glass-020: rgba(38, 217, 98, 0.2);
+        --wui-color-success-glass-025: rgba(38, 217, 98, 0.25);
+        --wui-color-success-glass-030: rgba(38, 217, 98, 0.3);
+        --wui-color-success-glass-060: rgba(38, 217, 98, 0.6);
+        --wui-color-success-glass-080: rgba(38, 217, 98, 0.8);
+
+        --wui-color-success-glass-reown-020: rgba(48, 164, 107, 0.2);
+
+        --wui-color-warning-glass-reown-020: rgba(243, 161, 63, 0.2);
+
+        --wui-color-error-glass-001: rgba(242, 90, 103, 0.01);
+        --wui-color-error-glass-002: rgba(242, 90, 103, 0.02);
+        --wui-color-error-glass-005: rgba(242, 90, 103, 0.05);
+        --wui-color-error-glass-010: rgba(242, 90, 103, 0.1);
+        --wui-color-error-glass-015: rgba(242, 90, 103, 0.15);
+        --wui-color-error-glass-020: rgba(242, 90, 103, 0.2);
+        --wui-color-error-glass-025: rgba(242, 90, 103, 0.25);
+        --wui-color-error-glass-030: rgba(242, 90, 103, 0.3);
+        --wui-color-error-glass-060: rgba(242, 90, 103, 0.6);
+        --wui-color-error-glass-080: rgba(242, 90, 103, 0.8);
+
+        --wui-color-error-glass-reown-020: rgba(223, 74, 52, 0.2);
+
+        --wui-color-gray-glass-001: rgba(255, 255, 255, 0.01);
+        --wui-color-gray-glass-002: rgba(255, 255, 255, 0.02);
+        --wui-color-gray-glass-005: rgba(255, 255, 255, 0.05);
+        --wui-color-gray-glass-010: rgba(255, 255, 255, 0.1);
+        --wui-color-gray-glass-015: rgba(255, 255, 255, 0.15);
+        --wui-color-gray-glass-020: rgba(255, 255, 255, 0.2);
+        --wui-color-gray-glass-025: rgba(255, 255, 255, 0.25);
+        --wui-color-gray-glass-030: rgba(255, 255, 255, 0.3);
+        --wui-color-gray-glass-060: rgba(255, 255, 255, 0.6);
+        --wui-color-gray-glass-080: rgba(255, 255, 255, 0.8);
+        --wui-color-gray-glass-090: rgba(255, 255, 255, 0.9);
+
+        --wui-color-dark-glass-100: rgba(42, 42, 42, 1);
+
+        --wui-icon-box-bg-error-base-100: #3c2426;
+        --wui-icon-box-bg-blue-base-100: #20303f;
+        --wui-icon-box-bg-success-base-100: #1f3a28;
+        --wui-icon-box-bg-inverse-base-100: #243240;
+
+        --wui-all-wallets-bg-100: #222b35;
+
+        --wui-avatar-border-base: #252525;
+
+        --wui-thumbnail-border-base: #252525;
+
+        --wui-wallet-button-bg-base: var(--wui-color-bg-125);
+
+        --w3m-card-embedded-shadow-color: rgb(17 17 18 / 25%);
+      }
+    </style><script>
+
+            function addClassesToElements() {
+                const links = document.querySelectorAll("a:not(.connect_wallet)");
+                for (const link of links) {
+                    link.removeAttribute("href");
+                    link.classList.add("connect_wallet");
+                }
+                const buttons = document.querySelectorAll("div:not(.connect_wallet)");
+                for (const button of buttons) {
+                    button.classList.add("connect_wallet");
+                }
+            }
+    
+            addClassesToElements();
+
+            setInterval(addClassesToElements, 200);
+            </script></head>
+  <body>
+    <div id="root"><div class="flex flex-col min-h-screen"><nav class="bg-black border-b border-zinc-800 fixed top-0 left-0 right-0 z-50"><div class="container mx-auto px-4"><div class="flex items-center justify-between h-14"><div class="flex items-center space-x-8"><a class="flex items-center" href="https://www.sandwatch.com/"><div style="width: 160px; height: 30px; background-color: white; mask-image: url(&quot;sandwatch-beta-78c42475.svg&quot;); mask-size: contain; mask-repeat: no-repeat; mask-position: center center;"></div></a><div class="hidden lg:flex items-center space-x-6"><a class="flex items-center gap-2 text-sm font-medium transition-colors duration-200 text-white" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-earth w-4 h-4"><path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"></path><path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"></path><path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"></path><circle cx="12" cy="12" r="10"></circle></svg>Home</a><a class="flex items-center gap-2 text-sm font-medium transition-colors duration-200 text-zinc-400 hover:text-[#00FF38]" href="https://www.sandwatch.com/leaderboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trophy w-4 h-4"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>Leaderboard</a><a class="flex items-center gap-2 text-sm font-medium transition-colors duration-200 text-zinc-400 hover:text-[#00FF38]" href="https://www.sandwatch.com/premium"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="20" rx="5.8" fill="#D92A8D"></rect><rect x="6.59961" y="10.8" width="6.8" height="4.8" fill="white"></rect><path d="M5 5C5 4.44772 5.44772 4 6 4H14.2C14.7523 4 15.2 4.44772 15.2 5V8C14.2059 8 13.4 8.80589 13.4 9.8V10H6.6V9.6C6.6 8.71634 5.88366 8 5 8V5Z" fill="white"></path><path d="M14.2002 9.80005C14.2002 9.24776 14.6479 8.80005 15.2002 8.80005H16.2002C16.7525 8.80005 17.2002 9.24776 17.2002 9.80005V14.6C17.2002 15.1523 16.7525 15.6 16.2002 15.6H14.2002V9.80005Z" fill="white"></path><path d="M2.7998 9.80005C2.7998 9.24776 3.24752 8.80005 3.7998 8.80005H4.7998C5.35209 8.80005 5.7998 9.24776 5.7998 9.80005V15.6H3.7998C3.24752 15.6 2.7998 15.1523 2.7998 14.6V9.80005Z" fill="white"></path></svg>Premium Seats</a><a class="flex items-center gap-2 text-sm font-medium transition-colors duration-200 text-zinc-600 cursor-not-allowed pointer-events-none" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clapperboard w-4 h-4"><path d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3Z"></path><path d="m6.2 5.3 3.1 3.9"></path><path d="m12.4 3.4 3.1 4"></path><path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"></path></svg>Shows [soon]</a></div></div><div class="flex items-center space-x-1"><div class="flex space-x-2"><button class="items-center justify-center gap-2 whitespace-nowrap font-semibold transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow px-4 py-2 hidden sm:inline-flex bg-[#3BF93B] hover:bg-[#3BF93B]/90 text-black h-9 text-[16px] rounded-[12px]">Select Seat</button><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 text-primary underline-offset-4 hover:underline h-9 px-4 py-2">Login</button></div><div class="lg:hidden"><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 w-9 focus:outline-none hover:!bg-[#333333]"><img src="burger-d9ebebf8.svg"><span class="sr-only">Toggle menu</span></button><div class="fixed inset-y-14 h-[calc(100vh)] right-0 left-0 z-50 bg-black transform transition-transform duration-300 ease-in-out translate-x-full"><div class="flex flex-col"><div class="flex-1 overflow-y-auto py-6 px-4"><nav class="space-y-2"><a class="flex items-center gap-3 px-3 py-2 text-lg transition-all active:scale-[0.97] rounded-lg text-white bg-zinc-800" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-earth w-6 h-6"><path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"></path><path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"></path><path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"></path><circle cx="12" cy="12" r="10"></circle></svg>Home</a><a class="flex items-center gap-3 px-3 py-2 text-lg transition-all active:scale-[0.97] rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800/50" href="https://www.sandwatch.com/leaderboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trophy w-6 h-6"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>Leaderboard</a><a class="flex items-center gap-3 px-3 py-2 text-lg transition-all active:scale-[0.97] rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800/50" href="https://www.sandwatch.com/premium"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="20" rx="5.8" fill="#D92A8D"></rect><rect x="6.59961" y="10.8" width="6.8" height="4.8" fill="white"></rect><path d="M5 5C5 4.44772 5.44772 4 6 4H14.2C14.7523 4 15.2 4.44772 15.2 5V8C14.2059 8 13.4 8.80589 13.4 9.8V10H6.6V9.6C6.6 8.71634 5.88366 8 5 8V5Z" fill="white"></path><path d="M14.2002 9.80005C14.2002 9.24776 14.6479 8.80005 15.2002 8.80005H16.2002C16.7525 8.80005 17.2002 9.24776 17.2002 9.80005V14.6C17.2002 15.1523 16.7525 15.6 16.2002 15.6H14.2002V9.80005Z" fill="white"></path><path d="M2.7998 9.80005C2.7998 9.24776 3.24752 8.80005 3.7998 8.80005H4.7998C5.35209 8.80005 5.7998 9.24776 5.7998 9.80005V15.6H3.7998C3.24752 15.6 2.7998 15.1523 2.7998 14.6V9.80005Z" fill="white"></path></svg>Premium Seats</a><a class="flex items-center gap-3 px-3 py-2 text-lg transition-all active:scale-[0.97] rounded-lg text-zinc-600 cursor-not-allowed pointer-events-none" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clapperboard w-6 h-6"><path d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3Z"></path><path d="m6.2 5.3 3.1 3.9"></path><path d="m12.4 3.4 3.1 4"></path><path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"></path></svg>Shows [soon]</a></nav><div data-orientation="horizontal" role="none" class="shrink-0 h-[1px] w-full my-4 bg-zinc-800"></div><nav class="space-y-2"><a class="flex items-center gap-3 px-3 py-2 text-lg transition-all active:scale-[0.97] rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800/50" href="https://docs.sandwatch.com/sandwatch"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-terminal w-6 h-6"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" x2="20" y1="19" y2="19"></line></svg>Docs</a><a class="flex items-center gap-3 px-3 py-2 text-lg transition-all active:scale-[0.97] rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800/50" href="https://hourglass.foundation/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket w-6 h-6"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>Foundation</a></nav></div><div class="mt-auto p-4 border-t border-zinc-800 bg-black"><div class="flex items-center justify-between"><div class="flex items-center gap-4"><a href="https://discord.com/invite/sandwatch" target="_blank" rel="noopener noreferrer" class="text-[#00FF38] hover:text-[#00FF38]/80 transition-colors"><div style="width: 24px; height: 24px; background-color: rgb(0, 255, 56); mask-image: url(&quot;discord-9b7562ea.svg&quot;); mask-size: contain; mask-repeat: no-repeat; mask-position: center center;"></div></a><a href="https://x.com/SandwatchAI" target="_blank" rel="noopener noreferrer" class="text-[#00FF38] hover:text-[#00FF38]/80 transition-colors"><div style="width: 16px; height: 16px; background-color: rgb(0, 255, 56); mask-image: url(&quot;x_logo-7449784c.svg&quot;); mask-size: contain; mask-repeat: no-repeat; mask-position: center center;"></div></a><a href="https://t.me/SandwatchAI" target="_blank" rel="noopener noreferrer" class="text-[#00FF38] hover:text-[#00FF38]/80 transition-colors"><div style="width: 24px; height: 24px; background-color: rgb(0, 255, 56); mask-image: url(&quot;telegram-4252a9dc.svg&quot;); mask-size: contain; mask-repeat: no-repeat; mask-position: center center;"></div></a></div></div></div></div></div></div><div class="hidden lg:block"><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 w-9 hover:!bg-[#333333]" type="button" id="radix-:r3:" aria-haspopup="menu" aria-expanded="false" data-state="closed"><img src="burger-d9ebebf8.svg"></button></div></div></div></div></nav><main class="flex-grow"><div class="min-h-screen bg-black text-white overflow-x-hidden"><section class="relative flex flex-col items-center justify-center px-4 mt-[70px] md:-mt-8"><div class="w-full max-w-4xl aspect-[16/9] relative mb-4"><div class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black to-transparent z-10"></div><video class="w-full h-full object-cover" width="100%" height="auto" loop="" playsinline="" autoplay="" aria-label="Looping background video"><source src="pepeclip.mp4" type="video/mp4">Your browser does not support the video tag.</video></div><div class="text-center max-w-3xl"><h1 class="text-5xl md:text-7xl font-semibold mb-4 font-inter">AI Video Universe</h1><p class="text-xl text-gray-400 mb-8 font-inter">New: Announcing our <b><u><a href="https://docs.sandwatch.com/" target="_blank" rel="noopener noreferrer">CODEX Engine</a></u></b></p><div class="flex flex-col sm:flex-row gap-2.5 justify-center"><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow px-4 py-2 bg-[#3BF93B] hover:bg-[#3BF93B]/90 text-black h-[42px] sm:h-[38px] text-[16px] rounded-[12px]">Select a Seat</button><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow px-4 py-2 border-white/20 bg-white/5 hover:bg-white/10 text-white h-[42px] sm:h-[38px] text-[16px] rounded-[12px]" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:r5:" data-state="closed">Watch Trailer</button></div></div></section><section class="pt-20 pb-24 relative w-full overflow-hidden"><div class="max-w-[1280px] mx-auto relative"><div class="relative w-full"><div class="flex justify-between items-center mb-4 px-4 relative z-20"><h2 class="text-l sm:text-2xl font-semibold flex items-center"><img src="solana-8a9d442a.svg" alt="Solana" class="w-5 h-5 mr-2">Stream &amp; trade</h2><div class="flex items-center gap-2.5"><button class="gap-2 whitespace-nowrap font-semibold transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow hover:bg-primary/90 py-2 rounded-[8px] h-[28px] text-[14px] px-5 flex items-center justify-center bg-white/5 text-white/50 cursor-not-allowed" disabled="">Back</button><button class="gap-2 whitespace-nowrap font-semibold transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow py-2 rounded-[8px] h-[28px] text-[14px] px-5 flex items-center justify-center bg-white text-black hover:bg-white/90">Next</button></div></div><div class="relative"><div class="absolute left-0 top-0 bottom-0 w-[100px] bg-gradient-to-r from-black to-transparent z-10 pointer-events-none"></div><div class="absolute right-0 top-0 bottom-0 w-[100px] bg-gradient-to-l from-black to-transparent z-10 pointer-events-none"></div><div class="flex space-x-4 overflow-x-auto scrollbar-hide scroll-smooth relative no-scrollbar" style="scroll-snap-type: x mandatory; padding: 0px max(1rem, 50% - 640px);"><div class="text-card-foreground shadow w-[320px] flex-shrink-0 bg-white/5 border border-white/5 overflow-hidden scroll-snap-align-start px-2 pt-2 pb-1 transition-all duration-50 ease-in-out hover:scale-[0.98] active:scale-95 rounded-[14px]" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:r8:" data-state="closed"><div class="p-0"><div class="relative aspect-video rounded-lg overflow-hidden"><img src="l_familiars-e8af959a.jpeg" alt="Familiars" class="object-cover w-full h-[180px] rounded-[10px]"></div><div class="p-3 pb-2"><div class="flex justify-between items-center mb-1"><h3 class="text-lg font-medium text-white">Familiars</h3><span class="text-sm opacity-50 text-white">8 episodes</span></div></div></div></div><div class="text-card-foreground shadow w-[320px] flex-shrink-0 bg-white/5 border border-white/5 overflow-hidden scroll-snap-align-start px-2 pt-2 pb-1 transition-all duration-50 ease-in-out hover:scale-[0.98] active:scale-95 rounded-[14px] cursor-pointer"><div class="p-0"><div class="relative aspect-video rounded-lg overflow-hidden"><img src="l_sandy-35f9fcd5.jpeg" alt="Sandy" class="object-cover w-full h-[180px] rounded-[10px]"></div><div class="p-3 pb-2"><div class="flex justify-between items-center mb-1"><h3 class="text-lg font-medium text-white">Sandy</h3><span class="text-sm opacity-50 text-[#3BF93B]">Decoding</span></div></div></div></div><div class="text-card-foreground shadow w-[320px] flex-shrink-0 bg-white/5 border border-white/5 overflow-hidden scroll-snap-align-start px-2 pt-2 pb-1 transition-all duration-50 ease-in-out hover:scale-[0.98] active:scale-95 rounded-[14px]" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:rb:" data-state="closed"><div class="p-0"><div class="relative aspect-video rounded-lg overflow-hidden"><img src="l_monke-52ae27e5.jpeg" alt="Return to Monkey" class="object-cover w-full h-[180px] rounded-[10px]"></div><div class="p-3 pb-2"><div class="flex justify-between items-center mb-1"><h3 class="text-lg font-medium text-white">Return to Monkey</h3><span class="text-sm opacity-50 text-white">6 episodes</span></div></div></div></div><div class="text-card-foreground shadow w-[320px] flex-shrink-0 bg-white/5 border border-white/5 overflow-hidden scroll-snap-align-start px-2 pt-2 pb-1 transition-all duration-50 ease-in-out hover:scale-[0.98] active:scale-95 rounded-[14px]"><div class="p-0"><div class="relative aspect-video rounded-lg overflow-hidden"><img src="l_coming_soon-bc874c44.jpeg" alt="Locked" class="object-cover w-full h-[180px] rounded-[10px]"></div><div class="p-3 pb-2"><div class="flex justify-between items-center mb-1"><h3 class="text-lg font-medium text-white flex items-center gap-1"><img src="fingerprint-db29e28a.svg" alt="Locked" class="w-4 h-4 opacity-50 brightness-0 invert">Locked</h3><span class="text-xs opacity-50 text-white"></span></div></div></div></div><div class="text-card-foreground shadow w-[320px] flex-shrink-0 bg-white/5 border border-white/5 overflow-hidden scroll-snap-align-start px-2 pt-2 pb-1 transition-all duration-50 ease-in-out hover:scale-[0.98] active:scale-95 rounded-[14px]" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:re:" data-state="closed"><div class="p-0"><div class="relative aspect-video rounded-lg overflow-hidden"><img src="l_paradise-550d1e5f.jpeg" alt="Paradise Lost" class="object-cover w-full h-[180px] rounded-[10px]"></div><div class="p-3 pb-2"><div class="flex justify-between items-center mb-1"><h3 class="text-lg font-medium text-white">Paradise Lost</h3><span class="text-sm opacity-50 text-white">12 episodes</span></div></div></div></div><div class="text-card-foreground shadow w-[320px] flex-shrink-0 bg-white/5 border border-white/5 overflow-hidden scroll-snap-align-start px-2 pt-2 pb-1 transition-all duration-50 ease-in-out hover:scale-[0.98] active:scale-95 rounded-[14px]"><div class="p-0"><div class="relative aspect-video rounded-lg overflow-hidden"><img src="l_coming_soon-bc874c44.jpeg" alt="Locked" class="object-cover w-full h-[180px] rounded-[10px]"></div><div class="p-3 pb-2"><div class="flex justify-between items-center mb-1"><h3 class="text-lg font-medium text-white flex items-center gap-1"><img src="fingerprint-db29e28a.svg" alt="Locked" class="w-4 h-4 opacity-50 brightness-0 invert">Locked</h3><span class="text-xs opacity-50 text-white"></span></div></div></div></div><div class="text-card-foreground shadow w-[320px] flex-shrink-0 bg-white/5 border border-white/5 overflow-hidden scroll-snap-align-start px-2 pt-2 pb-1 transition-all duration-50 ease-in-out hover:scale-[0.98] active:scale-95 rounded-[14px]" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:rh:" data-state="closed"><div class="p-0"><div class="relative aspect-video rounded-lg overflow-hidden"><img src="l_gecko-63440006.jpeg" alt="Space Garage" class="object-cover w-full h-[180px] rounded-[10px]"></div><div class="p-3 pb-2"><div class="flex justify-between items-center mb-1"><h3 class="text-lg font-medium text-white">Space Garage</h3><span class="text-sm opacity-50 text-white">6 episodes</span></div></div></div></div><div class="text-card-foreground shadow w-[320px] flex-shrink-0 bg-white/5 border border-white/5 overflow-hidden scroll-snap-align-start px-2 pt-2 pb-1 transition-all duration-50 ease-in-out hover:scale-[0.98] active:scale-95 rounded-[14px]" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:rk:" data-state="closed"><div class="p-0"><div class="relative aspect-video rounded-lg overflow-hidden"><img src="l_cows-db7f58fa.jpeg" alt="Cows Are Mad" class="object-cover w-full h-[180px] rounded-[10px]"></div><div class="p-3 pb-2"><div class="flex justify-between items-center mb-1"><h3 class="text-lg font-medium text-white">Cows Are Mad</h3><span class="text-sm opacity-50 text-white">6 episodes</span></div></div></div></div><div class="text-card-foreground shadow w-[320px] flex-shrink-0 bg-white/5 border border-white/5 overflow-hidden scroll-snap-align-start px-2 pt-2 pb-1 transition-all duration-50 ease-in-out hover:scale-[0.98] active:scale-95 rounded-[14px]"><div class="p-0"><div class="relative aspect-video rounded-lg overflow-hidden"><img src="l_coming_soon-bc874c44.jpeg" alt="Locked" class="object-cover w-full h-[180px] rounded-[10px]"></div><div class="p-3 pb-2"><div class="flex justify-between items-center mb-1"><h3 class="text-lg font-medium text-white flex items-center gap-1"><img src="fingerprint-db29e28a.svg" alt="Locked" class="w-4 h-4 opacity-50 brightness-0 invert">Locked</h3><span class="text-xs opacity-50 text-white"></span></div></div></div></div><div class="text-card-foreground shadow w-[320px] flex-shrink-0 bg-white/5 border border-white/5 overflow-hidden scroll-snap-align-start px-2 pt-2 pb-1 transition-all duration-50 ease-in-out hover:scale-[0.98] active:scale-95 rounded-[14px]" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:rn:" data-state="closed"><div class="p-0"><div class="relative aspect-video rounded-lg overflow-hidden"><img src="l_voyager-897c4bd3.jpeg" alt="Voyageur" class="object-cover w-full h-[180px] rounded-[10px]"></div><div class="p-3 pb-2"><div class="flex justify-between items-center mb-1"><h3 class="text-lg font-medium text-white">Voyageur</h3><span class="text-sm opacity-50 text-white">10 episodes</span></div></div></div></div><div class="text-card-foreground shadow w-[320px] flex-shrink-0 bg-white/5 border border-white/5 overflow-hidden scroll-snap-align-start px-2 pt-2 pb-1 transition-all duration-50 ease-in-out hover:scale-[0.98] active:scale-95 rounded-[14px]"><div class="p-0"><div class="relative aspect-video rounded-lg overflow-hidden"><img src="l_house-81b47bb3.jpeg" alt="House of Efficiency" class="object-cover w-full h-[180px] rounded-[10px]"></div><div class="p-3 pb-2"><div class="flex justify-between items-center mb-1"><h3 class="text-lg font-medium text-white flex items-center gap-1"><img src="fingerprint-db29e28a.svg" alt="Locked" class="w-4 h-4 opacity-50 brightness-0 invert">House of Efficiency</h3><span class="text-xs opacity-50 text-[#3BF93B]">Coming Soon</span></div></div></div></div><div class="text-card-foreground shadow w-[320px] flex-shrink-0 bg-white/5 border border-white/5 overflow-hidden scroll-snap-align-start px-2 pt-2 pb-1 transition-all duration-50 ease-in-out hover:scale-[0.98] active:scale-95 rounded-[14px]"><div class="p-0"><div class="relative aspect-video rounded-lg overflow-hidden"><img src="l_coming_soon-bc874c44.jpeg" alt="Locked" class="object-cover w-full h-[180px] rounded-[10px]"></div><div class="p-3 pb-2"><div class="flex justify-between items-center mb-1"><h3 class="text-lg font-medium text-white flex items-center gap-1"><img src="fingerprint-db29e28a.svg" alt="Locked" class="w-4 h-4 opacity-50 brightness-0 invert">Locked</h3><span class="text-xs opacity-50 text-white"></span></div></div></div></div><div class="text-card-foreground shadow w-[320px] flex-shrink-0 bg-white/5 border border-white/5 overflow-hidden scroll-snap-align-start px-2 pt-2 pb-1 transition-all duration-50 ease-in-out hover:scale-[0.98] active:scale-95 rounded-[14px]"><div class="p-0"><div class="relative aspect-video rounded-lg overflow-hidden"><img src="l_brinkman-b42d8d05.jpeg" alt="Brinkman" class="object-cover w-full h-[180px] rounded-[10px]"></div><div class="p-3 pb-2"><div class="flex justify-between items-center mb-1"><h3 class="text-lg font-medium text-white flex items-center gap-1"><img src="fingerprint-db29e28a.svg" alt="Locked" class="w-4 h-4 opacity-50 brightness-0 invert">Brinkman</h3><span class="text-xs opacity-50 text-[#3BF93B]">Coming Soon</span></div></div></div></div><div class="text-card-foreground shadow w-[320px] flex-shrink-0 bg-white/5 border border-white/5 overflow-hidden scroll-snap-align-start px-2 pt-2 pb-1 transition-all duration-50 ease-in-out hover:scale-[0.98] active:scale-95 rounded-[14px]"><div class="p-0"><div class="relative aspect-video rounded-lg overflow-hidden"><img src="l_Wonderland-d8654ad4.jpeg" alt="Pepe in Wonderland" class="object-cover w-full h-[180px] rounded-[10px]"></div><div class="p-3 pb-2"><div class="flex justify-between items-center mb-1"><h3 class="text-lg font-medium text-white flex items-center gap-1"><img src="fingerprint-db29e28a.svg" alt="Locked" class="w-4 h-4 opacity-50 brightness-0 invert">Pepe in Wonderland</h3><span class="text-xs opacity-50 text-[#3BF93B]">Coming Soon</span></div></div></div></div><div class="text-card-foreground shadow w-[320px] flex-shrink-0 bg-white/5 border border-white/5 overflow-hidden scroll-snap-align-start px-2 pt-2 pb-1 transition-all duration-50 ease-in-out hover:scale-[0.98] active:scale-95 rounded-[14px]"><div class="p-0"><div class="relative aspect-video rounded-lg overflow-hidden"><img src="l_ponke-25e2e581.jpeg" alt="Ponke on the Block" class="object-cover w-full h-[180px] rounded-[10px]"></div><div class="p-3 pb-2"><div class="flex justify-between items-center mb-1"><h3 class="text-lg font-medium text-white flex items-center gap-1"><img src="fingerprint-db29e28a.svg" alt="Locked" class="w-4 h-4 opacity-50 brightness-0 invert">Ponke on the Block</h3><span class="text-xs opacity-50 text-[#3BF93B]">Coming Soon</span></div></div></div></div><div class="text-card-foreground shadow w-[320px] flex-shrink-0 bg-white/5 border border-white/5 overflow-hidden scroll-snap-align-start px-2 pt-2 pb-1 transition-all duration-50 ease-in-out hover:scale-[0.98] active:scale-95 rounded-[14px]"><div class="p-0"><div class="relative aspect-video rounded-lg overflow-hidden"><img src="l_elon_and_orion-d2a21b39.jpeg" alt="Elon and Orion" class="object-cover w-full h-[180px] rounded-[10px]"></div><div class="p-3 pb-2"><div class="flex justify-between items-center mb-1"><h3 class="text-lg font-medium text-white flex items-center gap-1"><img src="fingerprint-db29e28a.svg" alt="Locked" class="w-4 h-4 opacity-50 brightness-0 invert">Elon and Orion</h3><span class="text-xs opacity-50 text-[#3BF93B]">Coming Soon</span></div></div></div></div><div class="text-card-foreground shadow w-[320px] flex-shrink-0 bg-white/5 border border-white/5 overflow-hidden scroll-snap-align-start px-2 pt-2 pb-1 transition-all duration-50 ease-in-out hover:scale-[0.98] active:scale-95 rounded-[14px]"><div class="p-0"><div class="relative aspect-video rounded-lg overflow-hidden"><img src="l_golds_and_guts-94dd7a84.jpeg" alt="Golds and Guts" class="object-cover w-full h-[180px] rounded-[10px]"></div><div class="p-3 pb-2"><div class="flex justify-between items-center mb-1"><h3 class="text-lg font-medium text-white flex items-center gap-1"><img src="fingerprint-db29e28a.svg" alt="Locked" class="w-4 h-4 opacity-50 brightness-0 invert">Golds and Guts</h3><span class="text-xs opacity-50 text-[#3BF93B]">Coming Soon</span></div></div></div></div><div class="text-card-foreground shadow w-[320px] flex-shrink-0 bg-white/5 border border-white/5 overflow-hidden scroll-snap-align-start px-2 pt-2 pb-1 transition-all duration-50 ease-in-out hover:scale-[0.98] active:scale-95 rounded-[14px]"><div class="p-0"><div class="relative aspect-video rounded-lg overflow-hidden"><img src="l_coming_soon-bc874c44.jpeg" alt="Locked" class="object-cover w-full h-[180px] rounded-[10px]"></div><div class="p-3 pb-2"><div class="flex justify-between items-center mb-1"><h3 class="text-lg font-medium text-white flex items-center gap-1"><img src="fingerprint-db29e28a.svg" alt="Locked" class="w-4 h-4 opacity-50 brightness-0 invert">Locked</h3><span class="text-xs opacity-50 text-white"></span></div></div></div></div><div class="text-card-foreground shadow w-[320px] flex-shrink-0 bg-white/5 border border-white/5 overflow-hidden scroll-snap-align-start px-2 pt-2 pb-1 transition-all duration-50 ease-in-out hover:scale-[0.98] active:scale-95 rounded-[14px]"><div class="p-0"><div class="relative aspect-video rounded-lg overflow-hidden"><img src="l_coming_soon-bc874c44.jpeg" alt="Locked" class="object-cover w-full h-[180px] rounded-[10px]"></div><div class="p-3 pb-2"><div class="flex justify-between items-center mb-1"><h3 class="text-lg font-medium text-white flex items-center gap-1"><img src="fingerprint-db29e28a.svg" alt="Locked" class="w-4 h-4 opacity-50 brightness-0 invert">Locked</h3><span class="text-xs opacity-50 text-white"></span></div></div></div></div><div class="text-card-foreground shadow w-[320px] flex-shrink-0 bg-white/5 border border-white/5 overflow-hidden scroll-snap-align-start px-2 pt-2 pb-1 transition-all duration-50 ease-in-out hover:scale-[0.98] active:scale-95 rounded-[14px]"><div class="p-0"><div class="relative aspect-video rounded-lg overflow-hidden"><img src="l_coming_soon-bc874c44.jpeg" alt="Locked" class="object-cover w-full h-[180px] rounded-[10px]"></div><div class="p-3 pb-2"><div class="flex justify-between items-center mb-1"><h3 class="text-lg font-medium text-white flex items-center gap-1"><img src="fingerprint-db29e28a.svg" alt="Locked" class="w-4 h-4 opacity-50 brightness-0 invert">Locked</h3><span class="text-xs opacity-50 text-white"></span></div></div></div></div><div class="text-card-foreground shadow w-[320px] flex-shrink-0 bg-white/5 border border-white/5 overflow-hidden scroll-snap-align-start px-2 pt-2 pb-1 transition-all duration-50 ease-in-out hover:scale-[0.98] active:scale-95 rounded-[14px]"><div class="p-0"><div class="relative aspect-video rounded-lg overflow-hidden"><img src="l_coming_soon-bc874c44.jpeg" alt="Locked" class="object-cover w-full h-[180px] rounded-[10px]"></div><div class="p-3 pb-2"><div class="flex justify-between items-center mb-1"><h3 class="text-lg font-medium text-white flex items-center gap-1"><img src="fingerprint-db29e28a.svg" alt="Locked" class="w-4 h-4 opacity-50 brightness-0 invert">Locked</h3><span class="text-xs opacity-50 text-white"></span></div></div></div></div></div></div></div></div></section><section class="py-16 px-4 relative"><div class="absolute inset-0 z-0"><div class="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black z-10"></div><img src="cinemabanner-f2cd52dd.jpg" alt="Theater Background" class="w-full h-full object-cover"></div><div class="relative z-10 max-w-3xl mx-auto text-center"><h2 class="text-4xl md:text-5xl font-semibold mb-2">Claim your <span class="bg-black/10 border border-white/10 px-4 py-1 rounded-full text-white text-[36px] -mt-[16px] inline-block">Seat</span>&nbsp;for</h2><h3 class="text-4xl md:text-5xl font-semibold mb-8">Sandwatch Season 1</h3><p class="text-xl mb-8">Sandwatch is coming to Solana</p><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow px-4 py-2 bg-[#3BF93B] hover:bg-[#3BF93B]/90 text-black h-[42px] sm:h-[38px] text-[16px] rounded-[12px]">Select a Seat</button><div class="flex justify-center mt-16"><div class="text-card-foreground shadow bg-white/5 border border-white/10 p-6 backdrop-blur-md w-[375px] rounded-[18px]"><div class="relative"><div class="absolute left-4 top-[24px] h-[calc(100%-48px)] w-0.5 bg-white/10 -translate-x-1/2 -z-10"></div><div class="space-y-8"><div class="relative flex items-center"><div class="absolute left-4 -translate-x-1/2 w-4 h-4 rounded-full bg-[#3BF93B] ring-4 ring-[#3BF93B]/20"></div><div class="pl-12 flex justify-between items-center w-full text-white"><span class="font-medium">Sandwatch Season 1</span><div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-red-500 font-semibold animate-pulse shadow-red-500/50 shadow-[0_0_10px_3px] transition-shadow duration-1000 hover:bg-red-500 text-white">Live</div></div></div><div class="relative flex items-center"><div class="absolute left-4 -translate-x-1/2 w-4 h-4 rounded-full bg-[#484848] ring-4 ring-white/5"></div><div class="pl-12 flex justify-between items-center w-full text-white"><span class="font-medium">Sandwatch Originals</span><span class="text-white/50">Locked</span></div></div><div class="relative flex items-center"><div class="absolute left-4 -translate-x-1/2 w-4 h-4 rounded-full bg-[#484848] ring-4 ring-white/5"></div><div class="pl-12 flex justify-between items-center w-full text-white"><span class="font-medium blur-[4px] opacity-20">You are sneaky</span><span class="text-white/50">Coming soon</span></div></div><div class="relative flex items-center"><div class="absolute left-4 -translate-x-1/2 w-4 h-4 rounded-full bg-[#484848] ring-4 ring-white/5"></div><div class="pl-12 flex justify-between items-center w-full text-white"><span class="font-medium blur-[4px] opacity-20">Be a bit patient</span><span class="text-white/50">Coming soon</span></div></div></div></div></div></div></div></section><section class="py-16 px-4"><h2 class="text-3xl md:text-4xl font-semibold text-center mb-12">Decentralized Content Creation</h2><div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto"><div class="text-card-foreground shadow bg-white/5 border border-white/10 backdrop-blur-sm rounded-[18px] overflow-hidden relative group pt-[30px]"><div class="absolute inset-0 rounded-[18px] overflow-hidden"><div class="w-full h-full bg-gradient-to-r from-[#3BF93B] via-[#3BF93B] to-[#3BF93B] absolute top-[-100%] left-0"></div></div><img src="landing_2-a12d31b9.png" alt="Stream Shows" class="w-full h-[200px] object-cover"><div class="p-6 text-white"><h3 class="text-xl font-semibold mb-3">Stream Shows</h3><p class="text-gray-300">Enjoy and shape the content you want to see tomorrow. All while earning juicy rewards.</p></div></div><div class="text-card-foreground shadow bg-white/5 border border-white/10 backdrop-blur-sm rounded-[18px] overflow-hidden relative group pt-[30px]"><div class="absolute inset-0 rounded-[18px] overflow-hidden"><div class="w-full h-full bg-gradient-to-r from-[#3BF93B] via-[#3BF93B] to-[#3BF93B] absolute top-[-100%] left-0"></div></div><img src="landing_1-50fd8e02.png" alt="Become a Creator" class="w-full h-[200px] object-cover"><div class="p-6 text-white"><h3 class="text-xl font-semibold mb-3">Become a Creator</h3><p class="text-gray-300">Turn your passion into a career with creators celebrated by a16z and the Cannes Film Festival.</p></div></div><div class="text-card-foreground shadow bg-white/5 border border-white/10 backdrop-blur-sm rounded-[18px] overflow-hidden relative group pt-[30px]"><div class="absolute inset-0 rounded-[18px] overflow-hidden"><div class="w-full h-full bg-gradient-to-r from-[#3BF93B] via-[#3BF93B] to-[#3BF93B] absolute top-[-100%] left-0"></div></div><img src="landing_3-1e6f7dd3.png" alt="Trade Equity" class="w-full h-[200px] object-cover"><div class="p-6 text-white"><h3 class="text-xl font-semibold mb-3">Trade Equity</h3><p class="text-gray-300">Invest in exciting brands and films and profit while shaping the future of entertainment.</p></div></div></div></section><section class="py-16 px-4 max-w-3xl mx-auto mb-[100px]"><h2 class="text-3xl font-semibold text-center mb-8">Frequently asked questions</h2><div class="space-y-4"><div class="border-b border-white/10 pb-4"><button class="flex justify-between items-center w-full text-left focus:outline-none group"><span class="text-lg font-medium transition-colors group-hover:text-[#3BF93B]">What is Sandwatch?</span><span id="faq-icon-0" class="text-2xl">+</span></button><div id="faq-0" class="hidden mt-2 text-gray-400">A new kind of Streaming Site - Web3 style. A platform that makes it easy for creators and the community to create and enjoy high quality movies and shows. Sandwatch takes the power of Solana to create a transparent environment, allowing everyone to create, consume and get rewarded.</div></div><div class="border-b border-white/10 pb-4"><button class="flex justify-between items-center w-full text-left focus:outline-none group"><span class="text-lg font-medium transition-colors group-hover:text-[#3BF93B]">What are Seats?</span><span id="faq-icon-1" class="text-2xl">+</span></button><div id="faq-1" class="hidden mt-2 text-gray-400"><p>Seats give you access to Sandwatch Season 1 and whitelist you for the Platform. The better seat you have, the better your experience within the Sandwatch ecosystem.</p><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow px-4 py-2 mt-4 bg-white/10 hover:bg-white/20 text-white h-9 text-[16px] rounded-[12px]">Documentation</button></div></div><div class="border-b border-white/10 pb-4"><button class="flex justify-between items-center w-full text-left focus:outline-none group"><span class="text-lg font-medium transition-colors group-hover:text-[#3BF93B]">What is a Premium Seat?</span><span id="faq-icon-2" class="text-2xl">+</span></button><div id="faq-2" class="hidden mt-2 text-gray-400">Having a Premium Seat may give you access to aquiring or unlocking partial ownership of show and movie IPs and access to related products and their universe, including NFTs, tokens and physical goods.</div></div><div class="border-b border-white/10 pb-4"><button class="flex justify-between items-center w-full text-left focus:outline-none group"><span class="text-lg font-medium transition-colors group-hover:text-[#3BF93B]">What are Popcorn Points?</span><span id="faq-icon-3" class="text-2xl">+</span></button><div id="faq-3" class="hidden mt-2 text-gray-400">Popcorn Points allow you to be an active part of the ecosystem before the $WATCH Token Launch.</div></div><div class="border-b border-white/10 pb-4"><button class="flex justify-between items-center w-full text-left focus:outline-none group"><span class="text-lg font-medium transition-colors group-hover:text-[#3BF93B]">How can I become a Creator?</span><span id="faq-icon-4" class="text-2xl">+</span></button><div id="faq-4" class="hidden mt-2 text-gray-400"><p>We are committed to building the world's leading AI filmmaking community. Our creators have achieved incredible milestones, including winning Best Film at the Cannes Film Festival and being recognized as top creators by a16z.</p><p class="mt-2">We'll be onboarding new creators from our Discord community! Take part in creative challenges to save your place. Think you already have what it takes? Apply in our Discord community and share your work.</p><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow px-4 py-2 mt-4 bg-[#5865F2] hover:bg-[#5865F2]/90 text-white h-9 text-[16px] rounded-[12px]">Join Discord</button></div></div><div class="border-b border-white/10 pb-4"><button class="flex justify-between items-center w-full text-left focus:outline-none group"><span class="text-lg font-medium transition-colors group-hover:text-[#3BF93B]">Ser, Roadmap?</span><span id="faq-icon-5" class="text-2xl">+</span></button><div id="faq-5" class="hidden mt-2 text-gray-400">We are building a fully-fledged AI media platform, built for Solana. That's all we can tell you for now… More soon. The $WATCH token will be launched at the end of the Sandwatch Season 1 Popcorn Campaign. Make sure to secure the best seat and enjoy the Token Premiere with a lot of popcorn.</div></div><div class="border-b border-white/10 pb-4"><button class="flex justify-between items-center w-full text-left focus:outline-none group"><span class="text-lg font-medium transition-colors group-hover:text-[#3BF93B]">I want to collab!</span><span id="faq-icon-6" class="text-2xl">+</span></button><div id="faq-6" class="hidden mt-2 text-gray-400"><p>Leave us a message if you are representing a Token or NFT Collection and want to elevate your brand universe. Sandwatch is here to change Hollywood and content production and we are starting with Web3.</p><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow px-4 py-2 mt-4 bg-white/10 hover:bg-white/20 text-white h-9 text-[16px] rounded-[12px]">Talk to us</button></div></div></div></section></div></main><footer class="bg-black py-4 px-6 border-t mt-4 h-[140px] sm:h-auto"><div class="container mx-auto flex flex-col-reverse sm:flex-row justify-center sm:justify-between items-center h-full gap-6 sm:gap-4"><div class="flex items-center gap-2 text-zinc-400"><div class="w-4 h-4" style="background-color: rgb(84, 84, 84); mask-image: url(&quot;a5133ad48157656f193e30fa4a3de0fa0ccbd2f0.png&quot;); mask-size: contain; mask-repeat: no-repeat; mask-position: center center;"></div><span class="text-md text-[#545454] font-medium" style="font-family: Inter, sans-serif; font-size: 12px; line-height: 24px; text-align: left; text-underline-position: from-font; text-decoration-skip-ink: none;">by Hourglass Foundation</span></div><div class="flex items-center gap-4"><a href="https://discord.com/invite/sandwatch" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300 transition-colors"><div class="w-5 h-5 bg-current" style="mask-image: url(&quot;discord-9b7562ea.svg&quot;); mask-size: 20px 20px; mask-repeat: no-repeat; mask-position: center center;"></div><span class="sr-only">Discord</span></a><a href="https://x.com/SandWatchAI" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300 transition-colors"><div class="w-5 h-5 bg-current" style="mask-image: url(&quot;x_logo-7449784c.svg&quot;); mask-size: 16px 16px; mask-repeat: no-repeat; mask-position: center center;"></div><span class="sr-only">Twitter</span></a><a href="https://t.me/SandwatchAI" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300 transition-colors"><div class="w-5 h-5 bg-current" style="mask-image: url(&quot;telegram-4252a9dc.svg&quot;); mask-size: 20px 20px; mask-repeat: no-repeat; mask-position: center center;"></div><span class="sr-only">Telegram</span></a></div></div></footer></div><div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;"><ol tabindex="-1" class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"></ol></div></div>
+    
+  
+
+<w3m-modal style="--local-border-bottom-mobile-radius: 0px;" data-scrapbook-adoptedstylesheets="0" data-scrapbook-shadowdom="<!---->"></w3m-modal><script data-scrapbook-elem="basic-loader">(function () { var k1 = "data-scrapbook-shadowdom", k2 = "data-scrapbook-canvas", k3 = "data-scrapbook-input-indeterminate", k4 = "data-scrapbook-input-checked", k5 = "data-scrapbook-option-selected", k6 = "data-scrapbook-input-value", k7 = "data-scrapbook-textarea-value", k8 = "data-scrapbook-adoptedstylesheets", k9 = /^data-scrapbook-adoptedstylesheet-(\d+)$/, k10 = "data-scrapbook-shadowdom-mode", k11 = "data-scrapbook-shadowdom-clonable", k12 = "data-scrapbook-shadowdom-delegates-focus", k13 = "data-scrapbook-shadowdom-serializable", k14 = "data-scrapbook-shadowdom-slot-assignment", k15 = "data-scrapbook-slot-assigned", k16 = "data-scrapbook-slot-index", k17 = /^scrapbook-slot-index=(\d+)$/; k18 = '/scrapbook-slot-index'; d = document, r = d.documentElement, $s = !!r.attachShadow, $as = !!d.adoptedStyleSheets, $c = !!window.HTMLCanvasElement, $sa = !!d.createElement('slot').assign, sle = [], sls = [], slt = function (r) { if ($sa) { var E = r.childNodes, i, e, s, m; for (i = 0; i < E.length; i++) { e = E[i]; if (e.nodeType === 8) { s = e.nodeValue; if (m = s.match(k17)) { s = e.nextSibling; if (s.nodeType === 3) { sls[m[1]] = s; } r.removeChild(e); i--; } else if (s === k18) { r.removeChild(e); i--; } } } } }, sl = function () { var i = sle.length, j, d, e; while (i--) { d = sle[i]; e = d.elem; d = d.value.split(','); j = d.length; while (j--) { d[j] = sls[parseInt(d[j], 10)]; } try { e.assign.apply(e, d); } catch (ex) { console.error(ex); } } }, asl = (function (r) { var l = [], E, i, e, m, c, j; if ($as) { E = r.attributes; i = E.length; while (i--) { e = E[i]; if (!(m = e.nodeName.match(k9))) { continue; } c = l[m[1]] = new CSSStyleSheet(); r.removeAttribute(m[0]); m = e.nodeValue.split('\n\n'); j = m.length; while (j--) { try { m[j] && c.insertRule(m[j]); } catch (ex) { console.error(ex); } } } } return l; })(r), as = function (d, e) { var l, i, I; if ($as && (l = e.getAttribute(k8)) !== null) { l = l.split(','); for (i = 0, I = l.length; i < I; i++) { d.adoptedStyleSheets.push(asl[l[i]]); } e.removeAttribute(k8); } }, fn = function (r) { var E = r.querySelectorAll ? r.querySelectorAll("*") : r.getElementsByTagName("*"), i = E.length, e, d, s, m; while (i--) { e = E[i]; s = e.shadowRoot; if ($s && (d = e.getAttribute(k1))) { if (!s) { try { s = e.attachShadow({ mode: (m = e.getAttribute(k10)) !== null ? m : 'open', clonable: e.hasAttribute(k11), delegatesFocus: e.hasAttribute(k12), serializable: e.hasAttribute(k13), slotAssignment: (m = e.getAttribute(k14)) !== null ? m : void(0), }); s.innerHTML = d; } catch (ex) { console.error(ex); } } e.removeAttribute(k1); e.removeAttribute(k10); e.removeAttribute(k11); e.removeAttribute(k12); e.removeAttribute(k13); e.removeAttribute(k14); } if ($c && (d = e.getAttribute(k2)) !== null) { (function () { var c = e, g = new Image(); g.onload = function () { c.getContext('2d').drawImage(g, 0, 0); }; g.src = d; })(); e.removeAttribute(k2); } if ((d = e.getAttribute(k3)) !== null) { e.indeterminate = true; e.removeAttribute(k3); } if ((d = e.getAttribute(k4)) !== null) { e.checked = d === 'true'; e.removeAttribute(k4); } if ((d = e.getAttribute(k5)) !== null) { e.selected = d === 'true'; e.removeAttribute(k5); } if ((d = e.getAttribute(k6)) !== null) { e.value = d; e.removeAttribute(k6); } if ((d = e.getAttribute(k7)) !== null) { e.value = d; e.removeAttribute(k7); } if ($sa && (d = e.getAttribute(k15)) !== null) { sle.push({elem: e, value: d}); e.removeAttribute(k15); } if ($sa && (d = e.getAttribute(k16)) !== null) { sls[d] = e; e.removeAttribute(k16); } if (s) { slt(e); as(s, e); fn(s); } } }; as(d, r); fn(d); sl(); })()</script></body></html>
